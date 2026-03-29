@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Legal</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <main>
-            <div class="box dark-box">
-                <div class="logo">
-                    <i class="fas fa-balance-scale-right"></i>
-                </div>
-                <div>
-                    <h1>Legal Legal</h1>
-                    <h3>All your legal advice</h3>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal</title>
 
-            <a href="#" class="box">
-                <div class="text">
-                    <h2>Family Law</h2>
-                    <p>Help with issues</p>
-                </div>
-                <div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </a>
+    <style>
+        body {
+            font-family: Arial;
+        }
 
-            <a href="#" class="box">
-                <div class="text">
-                    <h2>IP Law</h2>
-                    <p>Help with technology</p>
-                </div>
-                <div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </a>
+        .box {
+            display: block;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
 
-            <a href="#" class="box">
-                <div class="text">
-                    <h2>Contract Law</h2>
-                    <p>Help with paperwork</p>
-                </div>
-                <div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </a>
-        </main>
-        <aside>
-            <img src="man.jpg" alt="man" />
-        </aside>
-    </body>
+        .content {
+            display: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* Show content when targeted */
+        #family:target,
+        #ip:target,
+        #contract:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Legal Services</h1>
+
+    <!-- Buttons -->
+    <a href="#family" class="box">Family Law</a>
+    <a href="#ip" class="box">IP Law</a>
+    <a href="#contract" class="box">Contract Law</a>
+
+    <!-- Hidden sections -->
+    <div id="family" class="content">
+        <h2>Family Law</h2>
+        <p>You clicked Family Law!</p>
+    </div>
+
+    <div id="ip" class="content">
+        <h2>IP Law</h2>
+        <p>You clicked IP Law!</p>
+    </div>
+
+    <div id="contract" class="content">
+        <h2>Contract Law</h2>
+        <p>You clicked Contract Law!</p>
+    </div>
+
+</body>
 </html>
