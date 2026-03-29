@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal</title>
 
-    <style>
-        body {
-            font-family: Arial;
-        }
+<style>
+body {
+    font-family: Arial;
+}
 
-        .box {
-            display: block;
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 10px;
-            text-decoration: none;
-            color: black;
-            cursor: pointer;
-        }
+/* Buttons */
+.box {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
 
-        .content {
-            display: none;
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid black;
-        }
+/* Hide all content by default */
+.content {
+    display: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
 
-        /* Show content when targeted */
-        #family:target,
-        #ip:target,
-        #contract:target {
-            display: block;
-        }
-    </style>
+/* Show ONLY when clicked */
+#family:target,
+#ip:target,
+#contract:target {
+    display: block;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>Legal Services</h1>
+<h1>Legal Services</h1>
 
-    <!-- Buttons -->
-    <a href="#family" class="box">Family Law</a>
-    <a href="#ip" class="box">IP Law</a>
-    <a href="#contract" class="box">Contract Law</a>
+<!-- Buttons -->
+<a href="#family" class="box">Family Law</a>
+<a href="#ip" class="box">IP Law</a>
+<a href="#contract" class="box">Contract Law</a>
 
-    <!-- Hidden sections -->
-    <div id="family" class="content">
-        <h2>Family Law</h2>
-        <p>You clicked Family Law!</p>
-    </div>
+<!-- Content -->
+<div id="family" class="content">
+    <h2>Family Law</h2>
+    <p>You clicked Family Law!</p>
+</div>
 
-    <div id="ip" class="content">
-        <h2>IP Law</h2>
-        <p>You clicked IP Law!</p>
-    </div>
+<div id="ip" class="content">
+    <h2>IP Law</h2>
+    <p>You clicked IP Law!</p>
+</div>
 
-    <div id="contract" class="content">
-        <h2>Contract Law</h2>
-        <p>You clicked Contract Law!</p>
-    </div>
+<div id="contract" class="content">
+    <h2>Contract Law</h2>
+    <p>You clicked Contract Law!</p>
+</div>
 
 </body>
 </html>
